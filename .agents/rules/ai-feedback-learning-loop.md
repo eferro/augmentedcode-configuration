@@ -59,13 +59,13 @@ Upon receiving feedback or guidance from the user, the AI MUST follow these step
 
 ## 3. Real-World Example
 
-*   **Scenario:** The user and AI collaboratively worked on improving test coverage. During this process, the user provided feedback that the AI should always run tests automatically after every code change, without asking for permission.
+*   **Scenario:** While working on a feature, the user noticed that the AI was showing multiple test files at once, which made the conversation harder to follow. The user provided feedback: "Please show only one test at a time - it's easier to follow the conversation."
 *   **Feedback Loop in Action:**
-    1.  **Learning:** The AI learned that automatic test execution is a key expectation and should be explicitly stated in the development rules.
-    2.  **Rule Review:** The AI identified that `base.md` section 10 (Test-Driven Development Rules) was relevant.
-    3.  **Proposal:** The AI proposed to the user: "Based on our work on test execution, I've learned that automatic test running should be mandatory. I suggest we update `base.md` section 10 to explicitly state that tests should run automatically after every change without asking permission. [Details of proposed changes followed]. I will await your review and approval."
+    1.  **Learning:** The AI learned that displaying multiple tests simultaneously creates confusion and that a "one test at a time" approach improves clarity and focus.
+    2.  **Rule Review:** The AI identified that `base.md` section 10 (Test-Driven Development Rules), specifically the "Test Process & Output" subsection, was relevant. The rule already mentioned "Single Test Display" but could be more explicit about this being a mandatory practice.
+    3.  **Proposal:** The AI proposed to the user: "Based on your feedback about showing only one test at a time, I've identified an opportunity to strengthen `base.md` section 10. The 'Test Process & Output' subsection mentions 'Single Test Display: Only show one test at a time', but I suggest we make this more explicit and add it to the Quick Reference section (section 13) to ensure it's consistently applied. This change should help the AI maintain better focus and clarity in all test-driven development conversations. I will await your review and approval."
     4.  **Approval:** The user reviewed and approved the changes.
-    5.  **Update:** The AI updated `base.md` section 10 accordingly.
+    5.  **Update:** The AI updated `base.md` sections 10 and 13 accordingly, reinforcing the "one test at a time" principle.
 
 ## 4. Common Pitfalls / Anti-Patterns (To Be Avoided by the AI)
 
